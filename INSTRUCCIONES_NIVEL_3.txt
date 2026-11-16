@@ -1,0 +1,21 @@
+BUNNY'S TREASURE — NIVEL 3: EL TEMPLO DEL TESORO
+
+1. Descomprime el ZIP.
+2. Abre la carpeta completa en Visual Studio Code.
+3. Abre index.html con la extensión Live Server; también puedes abrir nivel3.html para probar el nivel final directamente.
+4. No abras los HTML con doble clic (file://): los modelos 3D necesitan un servidor HTTP.
+5. Para publicar en GitHub Pages, sube el CONTENIDO de esta carpeta a la raíz del repositorio, dejando index.html, nivel2.html, nivel3.html, css, js y assets en el mismo nivel.
+6. En Settings > Pages configura main / (root).
+
+CONTROLES: W/S avanzar-retroceder, A/D moverse lateralmente, ESPACIO saltar, E recoger llave/abrir cofre, ESC pausar.
+
+AJUSTES DEL NIVEL 3: abre js/nivel3.js y modifica CFG al principio:
+- start: inicio de Bunny; key y chest: posiciones de la llave y el cofre.
+- bunnyHeight, foxyHeight: tamaños de los personajes.
+- speed, jump, gravity, foxySpeed: velocidades y gravedad.
+- checkpoints: posiciones seguras; towerMotion: amplitud del movimiento de torres.
+- foxyUnderRamp y foxyLever: posiciones de Foxy.
+
+Los modelos 3D originales están en assets/escenario1.glb, escenario2.glb, escenario3.glb, bunny.glb y foxy.glb. Los colores y materiales GLB se conservan.
+
+NOTA: La detección de suelo usa rayos sobre el modelo de Blender. Si alguna superficie no se puede atravesar, ajusta el recorrido o los colisionadores en js/nivel3.js. Se ha comprobado la sintaxis JavaScript, pero no se ha completado una prueba manual de todo el nivel en un navegador.

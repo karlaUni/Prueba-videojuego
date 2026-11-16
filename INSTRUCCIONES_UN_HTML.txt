@@ -1,0 +1,5 @@
+BUNNY’S TREASURE — UN SOLO HTML
+
+Abre index.html con Live Server o publícalo en GitHub Pages. Los tres niveles se muestran desde el mismo index.html; los archivos js, css y assets deben mantenerse en sus carpetas. No es necesario subir nivel2.html ni nivel3.html.
+
+Para avanzar, recoge la llave y pulsa continuar.

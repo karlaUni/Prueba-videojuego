@@ -1,0 +1,42 @@
+BUNNY'S TREASURE — NIVEL 1
+
+CÓMO ABRIR EN VISUAL STUDIO CODE (SIN TERMINAL)
+1. Descomprime Bunnys_Treasure.zip.
+2. Abre Visual Studio Code y selecciona Archivo > Abrir carpeta.
+3. Selecciona la carpeta Bunnys_Treasure.
+4. Haz clic en Extensiones (icono de cuadrados), busca "Live Server" de Ritwick Dey y pulsa Instalar.
+5. Abre index.html. Haz clic derecho > Open with Live Server (o Go Live, abajo).
+6. Se abrirá el navegador. Pulsa COMENZAR AVENTURA y ENTRAR AL BOSQUE.
+7. Es necesaria conexión a Internet para descargar Three.js desde jsDelivr la primera vez.
+
+CONTROLES
+W / flecha arriba: avanzar hacia la derecha del escenario (eje X).
+S / flecha abajo: retroceder.
+A / flecha izquierda: moverse hacia un lado (eje Z).
+D / flecha derecha: moverse hacia el otro lado.
+ESPACIO: saltar. E: recoger la llave. Arrastrar ratón: cambiar vista de cámara.
+
+ARCHIVOS
+index.html = pantallas e interfaz
+css/style.css = colores y estilos
+js/game.js = juego, física, cámara, modelos y eventos
+assets/escenario1.glb = escenario Blender ORIGINAL
+assets/bunny.glb = personaje ORIGINAL
+assets/foxy.glb = enemigo ORIGINAL
+assets/rocky.png = guía 2D
+assets/logo.png = logo de portada
+
+CAMBIOS
+En js/game.js, modifica el objeto CONFIG de las primeras líneas:
+start = posición inicial, speed = velocidad, jump = fuerza de salto,
+bunnyHeight / foxyHeight = tamaños, key = posición de la llave,
+bridge = zona aproximada del puente.
+Las colisiones de árboles/rocas se calculan a partir de geometrías identificadas por nombre en Blender; si cambias sus nombres, revisa gatherColliders().
+
+PARA SUSTITUIR MODELOS
+Exporta desde Blender: Archivo > Exportar > glTF 2.0 (.glb), incluye materiales y texturas.
+Copia los .glb en assets/ con los nombres indicados. No cambies los nombres en index.html.
+
+IMPORTANTE
+El nivel es una implementación básica académica con posiciones editables. Se han conservado los GLB originales; las colisiones y puntos de interacción son aproximaciones y pueden requerir calibración fina según el recorrido deseado.
+No se ha probado el funcionamiento en un navegador real en este entorno.

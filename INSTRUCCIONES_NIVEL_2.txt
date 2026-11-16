@@ -1,0 +1,13 @@
+BUNNY'S TREASURE — NIVELES 1 Y 2
+
+1. Abre la carpeta en Visual Studio Code.
+2. Instala Live Server, abre index.html y selecciona Open with Live Server.
+3. Al ganar nivel 1, pulsa CONTINUAR A LA SIGUIENTE AVENTURA.
+4. Para probar nivel 2 directamente, abre nivel2.html con Live Server.
+5. Para GitHub Pages, sube el CONTENIDO de esta carpeta a la raíz del repositorio.
+6. Los modelos GLB están en assets/. Conserva sus nombres.
+7. En js/nivel2.js cambia CFG para modificar posiciones y velocidades.
+8. Activa Ver colisiones para comprobar las cajas.
+9. Requiere Internet para cargar Three.js desde CDN.
+
+AJUSTE DE ALTURA: En js/nivel2.js cambia characterVisualLift:.68 para subir o bajar visualmente a Bunny y Foxy sin modificar las colisiones.
